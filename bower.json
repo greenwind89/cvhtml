@@ -1,0 +1,17 @@
+{
+  "name": "cvhtml",
+  "version": "0.0.0",
+  "homepage": "https://github.com/greenwind89/document",
+  "authors": [
+    "greenwind89 <minh.truonganh7@gmail.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

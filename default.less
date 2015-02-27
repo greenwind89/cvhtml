@@ -1,0 +1,132 @@
+@import './bower_components/bootstrap/less/bootstrap.less';
+@indent-length: 20px;
+@strong-1-size: 16px;
+@strong-1-weight: 800;//400 = normal, 700 = bold
+
+body {
+    width: 670px !important;
+    font-size: 12px;
+}
+
+.education-item {
+    display: list-item;
+}
+
+.section {
+    margin-top: 8px;
+}
+.section-title {
+    border-bottom: solid 1.5px;
+    font-size: 14px; 
+}
+
+.standard-list-style {
+    display: list-item;
+}
+
+.role-detail-list-style {
+    display: list-item;
+    list-style-type: circle;
+}
+
+.section-detail {
+    padding-top: 8px;
+    padding-left: @indent-length;
+}
+
+.important-employment {
+
+    .employment-item {
+        margin-top: 5px;
+        .role {
+            margin-top: 2px;
+            padding-left: @indent-length;
+        }
+
+        .li {
+            .role-detail-list-style
+        }
+
+        .role-detail {
+            padding-left: 2* @indent-length;
+            margin-top: 2px;
+            div {
+                .role-detail-list-style
+            }
+            
+            strong {
+                font-size: 13px;
+            }
+        }
+
+        .general-title{
+            .standard-list-style
+        }
+    }
+}
+
+.additional-experience {
+    .experience-item {
+        margin-bottom: 2px;
+    }
+    .experience-title {
+        display: list-item;
+    }
+    
+    .experience-detail {
+        padding-left: @indent-length;
+        div {
+            .role-detail-list-style
+        }
+    }
+
+}
+
+.education {
+    .education-item {
+        margin-bottom: 2px;
+
+        strong {
+            font-weight: 600;
+        }
+
+        .education-detail {
+            padding-left:  @indent-length;
+            div {
+                .role-detail-list-style
+            }
+        }
+    }
+}
+
+.skill {
+    div {
+        display: list-item;
+    }
+}
+
+.award {
+    div {
+        display: list-item;
+    }
+}
+
+.strong-1{
+    font-size: @strong-1-size;
+    font-weight: @strong-1-weight;
+}
+
+.strong-2 {
+    font-size: @strong-1-size - 1px;
+    font-weight: @strong-1-weight - 100;
+}
+
+.strong-3 {
+    font-size: @strong-1-size - 1.5px;
+    font-weight: @strong-1-weight - 200;
+}
+
+.strong-4 {
+    font-size: @strong-1-size - 2.5px;
+    font-weight: @strong-1-weight - 300;
+}
